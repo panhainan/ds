@@ -1,0 +1,10 @@
+<html>    
+   <head>    
+      <meta http-equiv="content-type" content="text/html;charset=utf8">    
+   </head>    
+   <body>    
+      ${USERNAME}, 抱歉，梦之站管理平台只对梦之站团队内部成员使用，由于您不属于团队成员，所以您的账号不能团队的验证！</font>
+      	谢谢您对梦之站的关注，欢迎再次光临梦之站！</br>
+       <a href="${MAILCLICKURL}" target="_blank">${MAILCLICKURL}</a>
+   </body>    
+</html> 

@@ -1,0 +1,10 @@
+<html>    
+   <head>    
+      <meta http-equiv="content-type" content="text/html;charset=utf8">    
+   </head>    
+   <body>    
+      ${USERNAME}, 恭喜你，你的账号已经通过梦之站团队的验证！</font>
+      	请点击下面的链接尽快进入梦之站管理平台完善你的资料，谢谢！</br>
+       <a href="${MAILCLICKURL}" target="_blank">${MAILCLICKURL}</a>
+   </body>    
+</html> 

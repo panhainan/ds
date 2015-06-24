@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/conf/mail.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/css/select.css=UTF-8
+encoding//src/main/webapp/WEB-INF/manage/indexAddOrUpdateError.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/manage/memberAuthoriting.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/manage/selfInfo.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/show/introduction.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/show/login.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/show/programmer.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/show/teacher.jsp=UTF-8
+encoding//src/main/webapp/index.jsp=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources/jdbc.properties=UTF-8
+encoding/<project>=UTF-8
