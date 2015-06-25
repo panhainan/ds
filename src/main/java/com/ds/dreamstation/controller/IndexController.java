@@ -46,6 +46,7 @@ public class IndexController {
 
 	@RequestMapping(value = "/manage/go-add")
 	public String goAdd() {
+	  
 		return "manage/indexAdd";
 	}
 

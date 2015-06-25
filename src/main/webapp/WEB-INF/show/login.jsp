@@ -22,12 +22,52 @@
 <script src="<%=basePath%>js/jquery1.11.2.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
-<style rel="stylesheet">
+<style type="text/css">
 body {
 	background-color: #DBDBDB;
 	font-family: 宋体;
 }
+
+.verification_code{
+width:140px;
+height:36px;
+margin-left:10px;
+/* background-color:blue; */
+background-repeat:no-repeat;
+text-align:center;
+font-size:25px;
+background-image: url(img/icon/verification_code.jpg) ;
+}
+
+a:HOVER{
+	text-decoration: none;
+	cursor: pointer;
+	
+}
 </style>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$.post("member/get_verification_code","",function(data,textStatus){
+		$("#a_verification_code").empty();
+		$("#a_verification_code").html(data);
+	});
+	
+	$("#a_verification_code").click(function(){
+		
+		$.ajax({
+			type:"GET",
+			url:"member/get_verification_code",
+			success:function(data){
+				$("#a_verification_code").empty();
+				$("#a_verification_code").html(data);
+			}
+			});
+		
+	});
+	
+	});
+</script>
 </head>
 <body>
 	<div class="container">
@@ -100,7 +140,18 @@ body {
 							type="password" id="edit-pass" name="loginPass" size="15"
 							maxlength="128" required>
 					</div>
-					<br /> <input class="btn-primary btn-block btn btn form-submit"
+					<br />
+					<div class="form-item" style="width: 150px;float: left;">
+						<input placeholder="验证码" class="form-control required"
+							type="password" id="edit-pass" name="verification_code" size="15"
+							maxlength="128" required>
+					</div>
+					<a href=""></a>
+					<div class="verification_code" style="float: left">
+				       <a  title="点击刷新" id="a_verification_code"></a>
+				    </div>
+					<br /><br /><br />
+					 <input class="btn-primary btn-block btn btn form-submit"
 						type="submit" id="edit-submit--2" name="op" value="登录"> <br />
 					<ul class="list-inline text-center">
 						<li><a href="<%=basePath%>member/go-register" title="创建新用户帐号">申请加入我们</a>

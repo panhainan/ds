@@ -40,11 +40,18 @@ public class ManageController {
 		return "show/register";
 	}
 
-	@RequestMapping(value = "login-failed")
-	public String loginFail(HttpServletRequest req) {
-		req.setAttribute("message", "用户名或密码错误，请重新输入！");
+	@RequestMapping(value = "login-failed-verification")
+	public String login_failed_verification(HttpServletRequest req) {
+		req.setAttribute("message", "验证码错误，请重新输入！");
 		return "show/login";
 	}
+
+	
+	@RequestMapping(value = "login-failed")
+    public String loginFail(HttpServletRequest req) {
+        req.setAttribute("message", "用户名或密码错误，请重新输入！");
+        return "show/login";
+    }
 
 	@RequestMapping(value = "not-have-authority")
 	public String operateFail() {
