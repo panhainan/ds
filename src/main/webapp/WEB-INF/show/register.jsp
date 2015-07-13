@@ -132,7 +132,7 @@ p {
 					<div class="form-group">
 						<label for="email" class="col-sm-4 control-label">常用邮箱<sup>*</sup></label>
 						<div class="col-sm-4">
-							<input type="email" name="loginEmail" class="form-control" data-bv-regexp="true" data-bv-regexp-regexp="^[a-zA-Z0-9][a-zA-Z0-9_]{3,20}[a-zA-Z0-9]@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$" data-bv-regexp-message="长度不符合要求（邮箱前缀3-20，后缀2-4）"
+							<input type="email" name="loginEmail" class="form-control" data-bv-regexp="true" data-bv-regexp-regexp="^[a-zA-Z][a-zA-Z0-9_]{3,20}[a-zA-Z0-9]@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$" data-bv-regexp-message="长度不符合要求（邮箱前缀3-20，后缀2-4）"
 								id="email" placeholder="请输入常用邮箱，用来进行登录和其他操作" required>
 						</div>
 					</div>
@@ -200,6 +200,7 @@ p {
 	</div>
 	<script type="text/javascript">
     $(document).ready(function() {
+    	 
         $('#shippingForm')
             .on('init.form.bv', function(e, data) {
                 //console.log(data);
